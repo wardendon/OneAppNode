@@ -1,11 +1,11 @@
 {
-  "name": "OneAppNode",
+  "name": "one_app_node",
   "version": "1.0.0",
   "description": "",
   "type": "module",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "node server.js"
   },
   "keywords": [],
   "author": "w2gd",

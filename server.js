@@ -17,12 +17,13 @@ app.all("*", (req, res, next) => {
 
 app.use(resextra);
 app.use("/ideas", ideaRouter);
-app.get("/index.html", function (req, res) {
+app.get("/", function (req, res) {
+  res.header("Content-Type", "text/html;charset=utf-8");
   res.sendFile(__dirname + "/" + "index.html");
 });
 
 // 启动server
-let server = app.listen(3000, () => {
+let server = app.listen(4312, () => {
   // @ts-ignore
   let port = server.address().port;
   console.log(`应用实例，访问地址为 http://localhost:${port}`);
