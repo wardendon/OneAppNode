@@ -13,7 +13,7 @@ export default (req, res, next) => {
     } else {
       res = {
         code,
-        message: "请求失败",
+        msg,
       };
     }
     return res;
