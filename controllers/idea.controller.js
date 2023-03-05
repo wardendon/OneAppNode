@@ -29,7 +29,7 @@ export const findAllIdea = (req, res) => {
 
 // 增
 export const createIdea = (req, res) => {
-  let imageHeight = Math.round(Math.random() * (300 - 200) + 200);
+  let imageHeight = Math.round(Math.random() * (220 - 150) + 150);
   Idea.create({
     name: req.body.name,
     imageUrl: req.body.imageUrl,

@@ -6,8 +6,8 @@ import ideaModel from "./idea.model.js";
 //   dialect,
 //   pool,
 // });
-const sequelize = new Sequelize("wd_txy", "root", "mysql@1212", {
-  host: "124.221.138.97",
+const sequelize = new Sequelize("db_short_video", "root", "mysql@1212", {
+  host: "47.113.222.32",
   dialect: "mysql",
   pool: {
     max: 5,

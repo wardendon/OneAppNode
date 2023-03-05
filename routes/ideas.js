@@ -1,6 +1,4 @@
 import { Router } from "express";
-import { readFile } from "fs";
-import path from "path";
 import {
   createIdea,
   findAllIdea,
@@ -8,7 +6,6 @@ import {
 } from "../controllers/idea.controller.js";
 
 let ideaRouter = Router();
-const __dirname = path.resolve();
 
 /**
  * api
